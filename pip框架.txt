@@ -1,0 +1,15 @@
+pip:
+    sudo apt-get install python3-pip
+安装python包：
+    sudo pip3 install somePackage
+    ex:
+        sudo pip3 install   pymysql==0.7.11
+                            pillow
+                            Djanggo==1.11.8
+    删除:pip uninstall
+
+安装虚拟环境:VirtualEnv
+    创建虚拟环境：
+        virtualenv default
+        指定版本：
+        virtualenv -p /usr/bin/python3.5 名称
