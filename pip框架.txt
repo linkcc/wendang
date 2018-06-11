@@ -13,3 +13,27 @@ pip:
         virtualenv default
         指定版本：
         virtualenv -p /usr/bin/python3.5 名称
+    退出:
+        deactivate
+    删除：
+        rm -rf 虚拟环境目录
+虚拟环境管理工具：
+    virtualenvwrapper
+    安装:sudo pip3 install virtualenvwrapper
+    配置:在~目录下有.bashrc文件夹(ll命令可看到)
+        修改.bashrc:
+            底部增加:
+            export WORKON_HOME=~Myenv
+            export VIRUALENVWRAPPER_PYTHON=/usr/bin/python3
+    启动：
+        执行source .bashrc
+        执行source /usr/local/bin/virtualenvwrapper.sh
+    常用命令：
+        mkvirtualenv
+        rmvirtualenv
+        workon
+        deactivate
+        
+        
+
+        
