@@ -1,0 +1,25 @@
+#日志2018-6-12
+django:
+    from django.template impoty loader
+    return render(requst,'名称',参数)  #参数可以是dic等
+
+    别名：
+        url(r'^music/tite$',mus_v.tite_views,name='mt'),  name是别名
+        <a href="{%url 'mt' %}">TITE</a>  使用别名
+        <a href="/music/tite">tite</a>   与上条作用一样
+
+    将变量传入模板中：
+        {{list.1}}  不是list[1]而是list.1
+    
+    标签：
+        {% %}
+        {%if 条件 %}    {%endif %}
+
+    内置变量：
+        forloop.counter 计循环数
+        ……………………
+    过滤器：
+        {{var|过滤器}}
+        {{var|upper}}
+        {{var|lower}}
+        {{var|floatformat:n}}
